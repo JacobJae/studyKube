@@ -46,17 +46,24 @@ Cluster: consists of multiple nodes
 - API server
   - Front-end for kube, interact kubernetes
 - etcd service
-  - distribute, reliable key value store to manage cluster
+  - distributed reliable key-value store used by kubernetes to store all data used to manage the cluster
   - make sure there is no conflict on masters (i think it means prevent split brain)
 - kubelet service
   - agent that runs on each node of cluster
   - agent is responsible for containers are running on node as epexted
 - Container runtime
+  - responsible for running application in containers
   - underlying software used to run the container (eg, Docker, rkt, CRI-O)
 - Controller
   - monitor node goes down, if it goes down, controller bring up new container
 - Scheduler
-  - distributing work or container across multiple nodes
+  - distributing work or containers across multiple nodes
  
 ### Master vs Worker nodes
 <img width="955" alt="Screenshot 2024-01-21 at 5 00 17 PM" src="https://github.com/JacobJae/studyKube/assets/38265255/95f00af0-1b34-4152-b0be-7a3aceb566df">
+
+### kubectl
+- main command to run kubernetes
+- `kubectl run hello-minikube`
+- `kubectl cluster-info`
+- `kubectl get nodes`
