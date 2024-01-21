@@ -67,3 +67,15 @@ Cluster: consists of multiple nodes
 - `kubectl run hello-minikube`
 - `kubectl cluster-info`
 - `kubectl get nodes`
+
+### Pods
+- Single instance of application
+- Usually have 1 to 1 relationship with container
+- May contain single or multiple containers
+- If you wanna scale up, you can start new instance of pod (do not adding more containers inside pod), if node can't handle more instances, you can create new node and start another pod instance
+- Multi-Container Pod
+  - Usually, the same containers are not added in a pod, often have different containers in the same pod
+  - Usually Helper containers are there, they share network and resources easily between these containers.
+
+### YAML
+https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html
