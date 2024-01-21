@@ -26,3 +26,10 @@ Container vs Image
 Image: Package Template Plan(i think its kinda like a recipe), use image to create container.
 You can create a Docker image on one operating system and run it on another, as long as both systems are running Docker (Architecture dependent, can't run linuxamd image on ppcle)
 
+Container orchestration
+Container orchestration is the automated management, deployment, scaling, and operation of containerized applications
+Popular container orchestration platforms include Kubernetes, Docker Swarm, and Apache Mesos.
+
+Kubernetes architecture
+Node: (previously called minion)
+- physical or virtual machine that installed Kubernetes
